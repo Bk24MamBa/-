@@ -1,0 +1,16 @@
+/* pages/setSubject/setSubject.wxss */
+.top{
+  display: flex;
+  flex-direction: column;
+  margin-top: 35rpx;
+  margin-left: 35rpx;
+  margin-right: 35rpx;
+  color: #000000;
+}
+.top0{
+  background-color: #9db2ee;
+}
+.top1{
+  margin-top:35rpx; 
+  background-color: #9db2ee;
+}

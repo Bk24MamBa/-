@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index3/index3",
+    "pages/index/index",
+    "pages/index2/index2",
+    "pages/wdtsubject/wdtsubject",
+    "pages/setSubject/setSubject",
+    "pages/subject/subject",
+    "pages/index1/index1",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "Just Do it",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "backgroundColor": "#0094ff",
+    "color": "#000",
+    "borderStyle": "white",
+    "selectedColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Today",
+        "iconPath": "img/bike.png",
+        "selectedIconPath": "img/bike1.png"
+      },
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "Tomorrow",
+        "iconPath": "img/tomorrow.png",
+        "selectedIconPath": "img/tomorrow1.png"
+      },
+      {
+        "pagePath": "pages/subject/subject",
+        "text": "All",
+        "iconPath": "img/mysql.png",
+        "selectedIconPath": "img/mysql1.png"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "Search",
+        "iconPath": "img/search.png",
+        "selectedIconPath": "img/search1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap53.json"
+}

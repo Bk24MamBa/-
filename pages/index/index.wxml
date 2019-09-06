@@ -1,0 +1,184 @@
+<!--index.wxml-->
+<view class='all'>
+  <view class="userinfo">
+      <view>第<text>{{week}}</text>周星期<text>{{day}}</text></view>
+      <view wx:if='{{hour==0}}' style='margin-top:10px;color:#0094ff;'>上课时间，要好好听课哦~(＾∀＾)</view>
+      <view wx:if='{{hour==1}}' style='margin-top:10px;color:#0094ff;'>现在没课哦，可以自学或者去运动呢~୧ʕ•̀ᴥ•́ʔ୨</view>
+      <view wx:if='{{hour==2}}' style='margin-top:10px;color:#0094ff;'>时候不早啦，该睡觉觉啦wdt~(。-ω-)zzz</view>
+      <view wx:if='{{hour==3}}' style='margin-top:10px;color:#0094ff;'>想我了莫~☆*:. o(≧▽≦)o .:*☆</view>
+      <view wx:if='{{hour==4}}' style='margin-top:10px;color:#0094ff;'>又来偷看我了哦~(◍•ᴗ•◍)</view>
+      <view wx:if='{{hour==5}}' style='margin-top:10px;color:#0094ff;'>10·26~＼（＠￣∇￣＠）／</view>
+      <view wx:if='{{hour==6}}' style='margin-top:10px;color:#0094ff;'>知奋斗落去~୧ʕ•̀ᴥ•́ʔ୨</view>
+  </view>
+ <view>
+  <view wx:if='{{day=="一"}}'>
+    <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="1"}}' class="day">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="二"}}'>
+    <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="2"}}' class="day">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="三"}}'>
+    <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="3"}}' class="day">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="四"}}'>
+    <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="4"}}' class="day">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="五"}}'>
+    <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="5"}}' class="day">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="六"}}'>
+    <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="6"}}' class="day">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="七"}}'>
+    <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="7"}}' class="day">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+</view>
+<text style="display: flex;flex-direction: column;margin-top:24px;align-items: center;color:pink;">Wdt~</text>
+  <view wx:if='{{day=="一"}}'>
+    <view wx:for="{{wlist3}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="1"}}' class="wdtday">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="二"}}'>
+    <view wx:for="{{wlist3}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="2"}}' class="wdtday">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="三"}}'>
+    <view wx:for="{{wlist3}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="3"}}' class="wdtday">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="四"}}'>
+    <view wx:for="{{wlist3}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="4"}}' class="wdtday">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="五"}}'>
+    <view wx:for="{{wlist3}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="5"}}' class="wdtday">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="六"}}'>
+    <view wx:for="{{wlist3}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="6"}}' class="wdtday">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{day=="日"}}'>
+    <view wx:for="{{wlist3}}" wx:for-item="kc" wx:key="{{index}}" >
+      <view wx:if='{{kc.xqj=="7"}}' class="wdtday">
+        第{{kc.sksj}}-{{kc.sksj+1}}节课:  
+          <block wx:for="{{kc.zhou}}" wx:key="{{index}}">
+            <block wx:if="{{item==week}}" >
+              {{kc.kcxx}}
+            </block>
+          </block>
+      </view>
+    </view>
+  </view>
+</view>
