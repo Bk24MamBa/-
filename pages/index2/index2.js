@@ -4,6 +4,8 @@ Page({
   data: {
     text: "",
     sentext: "",
+    t:true,
+    v:'',
     checkWord: null
   },
   wordInput: function (e) {
@@ -29,6 +31,11 @@ Page({
         thispage.setData({ sentext: "" });
       }
     })
+  },
+  clean:function(){
+    this.setData({
+      v:"",
+      t:true,
+    })
   }
-
 })

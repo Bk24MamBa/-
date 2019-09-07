@@ -1,6 +1,9 @@
 <view class="section">
-  <input placeholder="请输入英文单词" bindinput='wordInput' focus="true" confirm-type="done"/>
-  <button type='primary' bindtap='btnClick'>查询</button>
+  <input placeholder="请输入英文单词" bindinput='wordInput' focus="{{t}}" confirm-type="search" bindconfirm="btnClick" value="{{v}}"/>
+  <view style="display: flex;flex-direction: column;align-items: center;">
+    <button type='primary' bindtap='btnClick'>查询</button>
+    <button type='primary' bindtap='clean'>清空</button>
+  </view>
 </view>
 <view class="textView">
   <text>{{text}}</text>
