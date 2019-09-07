@@ -31,7 +31,7 @@ Page({
     if (day < 6) day = day + 1;
     else day = 0;
     var z;
-    if (day == "1") { z = "一" }
+    if (day == "1") { z = "一";week++; }
     if (day == "2") { z = "二" }
     if (day == "3") { z = "三" }
     if (day == "4") { z = "四" }

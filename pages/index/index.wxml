@@ -83,7 +83,7 @@
       </view>
     </view>
   </view>
-  <view wx:if='{{day=="七"}}'>
+  <view wx:if='{{day=="日"}}'>
     <view wx:for="{{wlist2}}" wx:for-item="kc" wx:key="{{index}}" >
       <view wx:if='{{kc.xqj=="7"}}' class="day">
         第{{kc.sksj}}-{{kc.sksj+1}}节课:  
